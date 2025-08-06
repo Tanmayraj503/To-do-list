@@ -50,6 +50,7 @@ clearAllBtn.addEventListener("click", function () {
     }
 });
 
+
 tasklist.addEventListener("dblclick", function (e){
     if(e.target.tagName === "LI" && !e.target.classList.contains("clearAllBtn")){
         const oldText = e.target.childNodes[0].nodeValue.trim();
