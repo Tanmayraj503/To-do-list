@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0ca76b, #5640b1);
+    padding-top: 10px;
+}
+
+.content {
+    width: 100%;
+    max-width: 540px;
+    padding: 40px 30px 30px;
+    margin: 30px auto 20px;
+    background: white;
+    border-radius: 10px !important;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.3em;
+    padding: 10px;
+}
+
+.image img {
+
+    width: 27px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background-color: rgb(226, 224, 224);
+}
+
+#taskInput {
+    flex: 1;
+    outline: none;
+    /* width: 100%; */
+    /* max-width: 400px; */
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 14px;
+    background-color: transparent;
+}
+
+.icon {
+    font-size: 11px;
+    padding: 16px 50px;
+    border-radius: 30px;
+    background-color: red;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    padding: 12px 10px 12px 50px;
+    position: relative;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url('unchecked.png');
+    background-size: cover;
+    background-position: center;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #555;
+}
+
+ul li.checked::before {
+    background-image: url('checked.png');
+}
+
+ul li span {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: gray;
+    line-height: 40px;
+border-radius: 50%;
+}
+ul li span:hover{
+    background-color: rgb(243, 242, 242);
+}

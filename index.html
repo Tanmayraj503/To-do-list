@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>My To-do List <span class="image"><img src="icon1.png" alt="list icon"></span></h2>
+            <div class="row">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button class="icon" onclick="addTask()">Add</button>
+            </div>
+
+            <ul id="taskList">
+                <!-- <li>task1</li>
+                <li>task2</li>
+                <li>task3</li> -->
+            </ul>
+            <button id="clearAllBtn" class="icon" style="background-color: #555; margin-top: 10px;">Clear All</button>
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
