@@ -56,7 +56,7 @@ tasklist.addEventListener("dblclick", function (e){
         const oldText = e.target.childNodes[0].nodeValue.trim();
         const newText = prompt("Edit Old Task", oldText);
         if(newText !==""  && newText !== null){
-            e.target.childNodes[0].nodeValue= newText + " ";
+            e.target.childNodes[0].nodeValue= newText;
             savedata(); 
         }
     }

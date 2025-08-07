@@ -109,8 +109,19 @@ ul li span {
     font-size: 22px;
     color: gray;
     line-height: 40px;
-border-radius: 50%;
+    border-radius: 50%;
 }
-ul li span:hover{
+
+ul li span:hover {
     background-color: rgb(243, 242, 242);
+}
+
+#clearAllBtn {
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #646464;
+    padding: 13px 15px 13px 15px;
+    font-size: 13px;
+    font-weight: bold;
 }
